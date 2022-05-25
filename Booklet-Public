@@ -168,4 +168,85 @@ do{
     console.log(nam3)
 }while (nam3 != 'Voldemort')
 alert(list)
+//? /-------Booklet14--------/
+
+function dato() {
+    return prompt('cúantos años tienes?')
+}
+function edad (anios) {
+    return 'La edad es '+anios
+}
+function saludo(anios) {
+    alert(anios)
+}
+saludo(edad(dato()))
+
+//? /-------Booklet14--------/
+
+let redondeo = (valor) =>  Math.round(valor)
+
+for (let i = 0; i < 2; i++) {
+    let valor = prompt('Ingrese un numero decimal: ')
+    alert(redondeo(valor))
+
+}
+
+//? /-------Booklet15--------/
+
+let precioFinal = (valor, porc) => {
+    pFinal =  valor * (porc/100);
+    total = +pFinal + +valor
+    return (`El precio del producto es ${valor}
+    \n El ${porc}% de impueto es  ${pFinal}
+    \n El total a pagar es de : ${total}`)   
+}
+for (let i = 0; i < 3; i++) {
+    let valor = prompt('Ingrese el precio del producto: ');
+    let porc = prompt('Ingrese el % de descuento: ')
+    alert(precioFinal(valor, porc))    
+} 
+
+//? /-------Booklet16--------/
+
+let usdArs = (valor) => {
+    cambio = valor*119.5
+    return(`El valor a cambiar en USD ${valor}
+    \n el cambio al día de hoy es de  119.5 ARS
+    \n para un total de ${cambio}`)
+}
+let arsUsd = (valor) => {
+    cambio = valor*0.0084
+    return(`El valor a cambiar en USD ${valor}
+    \n el cambio al día de hoy es de  0.0084 USD
+    \n para un total de ${cambio}`)
+} 
+do{
+    let tipo = prompt(` Ingrese USD para cambiar USD a ARG 
+    \n Ingrese ARG para cambiar de ARG a USD`)
+    let valor = prompt(`Ingrese el valor a cambiar: `)
+    if (tipo != 'USD'&& tipo !='usd') {
+        alert(arsUsd(valor))
+    } else { 
+        alert(usdArs(valor))
+    }
+    flag = prompt('Hacer otro cambio: (s/n)')
+} while (flag == 's');
+*/
+//? /-------Booklet16--------/
+/*
+let validacion = (cadena) =>{
+    if (cadena != '') {
+        return alert('true')
+    }else{
+        return alert('false')
+    }
+}
+*/
+let validacion = (cadena)=> cadena != '' ? alert('True') : alert('False')
+do {
+    let cadena = prompt(`Ingrese usuario, si no tiene presione aceptar`)
+    validacion(cadena)
+    flag = prompt(`Escriba 'ESC para salir'`)
+} while (flag != 'ESC');
+
 */
