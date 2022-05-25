@@ -1,0 +1,171 @@
+/*
+//? /-------Booklet1--------/
+let nam3 = prompt('Ingrese nombre del personaje: ');
+let lastName = prompt('Ingrese apellido: ');
+let age = prompt('Ingrese la edad: ');
+alert(`Usted digito el personaje: ${nam3} ${lastName}. Edad: ${age} Años.`);
+
+//? /-------Booklet2--------/
+const cityOne = 'Medellín';
+const cityTwo = 'Buenos Aires';
+const cityTree = 'Lima';
+const cityFour = 'CDMX';
+const cityFive = 'Quito';
+alert('Cinco ciudades de sur america: '+cityOne+', '+cityTwo+', '+cityTree+', '+cityFour+', '+cityFive+'.')
+
+//? /-------Booklet3--------/
+let city = prompt('Ciudad de Expedición: ');
+let nam3 = prompt('Ingrese Nombre: ');
+let lastName = prompt('Ingrese Apellido: ');
+let address = prompt('Ingrese la dirección de recidencia');
+let birthDay = prompt('Fecha de nacimiento. \n Formato: DDMMAAA ');
+let sex = prompt('Identidad de género: M | F | O: ');
+let ht = prompt('Ingrese la Altura, en cm: ');
+let eyes = prompt('Color de ojos: NG | CF | AZ | GR |');
+let wt = prompt('Ingrese Peso: ');
+const cardId = eyes+birthDay+sex+wt+ht
+const card = ( `${city}\n 
+Driver Licence \n
+${cardId}\n
+${nam3} ${lastName}\n
+${address}\n
+${city} America \n
+Fecha de cumpleaños ${birthDay} \n
+Genero | Altura | Ojos | Peso \n
+Tipo ${sex} | ${ht} cm | Color ${eyes} | ${wt} kg`);
+alert(card)
+
+//? /-------Booklet4--------/
+let nam1 = prompt('Ingrese el nombre del 1 integrante de la familia: ');
+let nam2 = prompt('Ingrese el nombre del 2 integrante de la familia: ');
+let nam3 = prompt('Ingrese el nombre del 3 integrante de la familia: ');
+let nam4 = prompt('Ingrese el nombre del 4 integrante de la familia: ');
+let nam5 = prompt('Ingrese el nombre del 5 integrante de la familia: ');
+const family = (`Los integrantes de la familia són: '${nam1}, ${nam2}, ${nam3},${nam4},${nam5} Simposn.`);
+alert (family)
+
+//? /-------Booklet5--------/
+let price1 = prompt('Ingrese precio 1 ');
+let price2 = prompt('Ingrese precio 2 ');
+let price3 = prompt('Ingrese precio 3 ');
+const priceN = +price1+ +price2+ +price3;
+console.info(typeof priceN)
+const discount20 = priceN * 0.20;
+const discount30 = priceN * 0.30;
+const discount50 = priceN * 0.50;
+const priceT =  priceN - discount20;
+const pricetext = (`El valor total de su compra es: $${priceN} \n
+Le aplicamos un descuento del 20% por un valor de $${discount20} \n
+Le aplicamos un descuento del 30% por un valor de $${discount30} \n
+Le aplicamos un descuento del 50% por un valor de $${discount50} \n
+Para un total de: $${priceT}\n
+Gracias por su compra`);
+alert(pricetext)
+
+//? /-------Booklet6--------/
+let name1 = prompt('Ingres un nombre1 :');
+let name2 = prompt('Ingres un nombre2 :');
+if (name1===name2) {k
+    alert(`fui yo, el nombre es: ${name1}`);    
+} else {
+    alert(`Yo no fui, el nombre es: ${name1} y tu digitaste ${name2}`)
+}
+
+//? /-------Booklet7--------/
+let key = prompt('Presione una tecla: ');
+if ((key == "Y" ) || (key == "y")) {
+    alert(`Correcto!!! la tecla es ${key}`);
+} else {
+    alert(`Error!!! la tecla ingresada es ${key}`);
+    
+}
+
+//? /-------Booklet8--------/
+let num = prompt('ingrese un número de 1 a 4: ');
+let numN = +num;
+switch (numN) {
+    case 1:
+        alert('Homero')
+        break;
+    case 2:
+        alert('Marge')
+        break;
+    case 3:
+        alert('Bart')
+        break;
+    case 4:
+        alert('Lisa') 
+        break;       
+    default:
+        alert('No es un Simposon')
+        break;
+}
+
+let num = prompt('Ingrese un núemro: ');
+let numN = +num;
+if (numN < 1001) {
+    alert(`El número ingresado es ${numN}, Prospupuesto bajo`)
+}else if (numN > 3000){
+    alert(`El número ingresado es ${numN}, Presupuesto alto`)
+}else
+    alert(`El número ingresado es ${numN}, prepsupuesto medio`)
+
+
+//? /-------Booklet9--------/
+let product1 = prompt('Ingrese producto 1: ')
+console.warn(product1)
+let product2 = prompt('Ingrese producto 2: ')
+let product3 = prompt('Ingrese producto 3: ')
+let product4 = prompt('Ingrese producto 4: ')
+if((product1 != "")||(product2 != "")||(product3 != "")||(product4 != "")) {
+    alert('Error: Es necesario cargar todos los productos')
+}else
+alert(`Producto 1: ${product1} \n
+Producto 2: ${product2} \n
+Producto 3: ${product3} \n
+Producto 4: ${product4}`)
+
+
+//? /-------Booklet10--------/
+let iter = prompt('Ingrese la cantidad de repeticiones: ');
+let msg = prompt('Ingrese el mensaje a mostrar: ');
+let cont = 1;
+while(cont <= iter){
+    alert(`${cont} - ${msg}`);
+    cont ++
+}
+
+//? /-------Booklet11--------/
+let lado = prompt('Ingrese un número: ');
+let cont=1
+while (cont <= lado) {
+    alert(`lado ${cont} de ${lado}`)
+    cont ++
+    if (cont == 5) {
+        break;        
+    }
+}
+
+//? /-------Booklet12--------/
+
+let completeName
+let list = ''
+let cont = 1
+while (cont<=3) {
+    completeName = prompt(`Ingrese el nombre del alumno ${cont}: `);
+    list += (`Nombre del alumno ${cont} ${completeName} \n`)
+    cont++  
+}
+alert(list)
+
+
+//? /-------Booklet13--------/
+let nam3
+let list = ""
+do{
+    nam3= prompt(`Ingrese el nombre: `);
+    list +=  (`${nam3} \n`);
+    console.log(nam3)
+}while (nam3 != 'Voldemort')
+alert(list)
+*/
